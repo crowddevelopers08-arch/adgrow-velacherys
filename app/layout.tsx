@@ -1,13 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Outfit } from "next/font/google"
 import Script from "next/script"
 import "./globals.css"
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-})
 
 export const metadata: Metadata = {
   title: "Adgro Skin Velachery ",
@@ -61,8 +55,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${outfit.variable} antialiased`}>
-      <body className={`${outfit.variable} antialiased`}>
+    <html lang="en" className="antialiased">
+      <body className="antialiased">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QP0P36FHP8"
           strategy="afterInteractive"

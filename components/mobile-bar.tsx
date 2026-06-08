@@ -21,13 +21,13 @@ export default function MobileActionBar() {
       "
     >
       {/* Call Now */}
-      <a
+      <a 
+      style={{ background: 'linear-gradient(135deg, #ec4899, #be185d)' }}
         href="tel:+91 89706 56789"
         className="
           flex-1 flex items-center justify-center gap-2
           py-4 font-semibold text-white
           text-sm
-          bg-[#e8185a]
           active:scale-95 transition
         "
       >

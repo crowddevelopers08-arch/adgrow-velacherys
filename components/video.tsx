@@ -104,19 +104,17 @@ const ImageGridCarousel = () => {
   return (
     <>
    <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,500&family=Outfit:wght@300;400;500;600&display=swap');
-
         .cvg-section {
-          font-family: 'Outfit', sans-serif;
+          font-family: var(--font-outfit);
         }
 
         .cvg-heading {
-          font-family: 'Playfair Display', serif;
+          font-family: Georgia, serif;
           font-weight: 800;
         }
 
         .cvg-subtext {
-          font-family: 'Playfair Display', serif;
+          font-family: Georgia, serif;
         }
       `}</style>
       <section

@@ -43,15 +43,13 @@ export default function FAQSection() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500;1,700&family=DM+Sans:wght@300;400;500;600&display=swap');
-
-        .faq { font-family:'DM Sans',sans-serif; background:#fff; padding:90px 60px; position:relative; overflow:hidden; }
+        .faq { font-family:var(--font-outfit); background:#fff; padding:90px 60px; position:relative; overflow:hidden; }
 
         /* Ghost watermark */
         .faq::after {
           content:'?';
           position:absolute; bottom:-60px; right:40px;
-          font-family:'Cormorant Garamond',serif;
+          font-family:Georgia,serif;
           font-style:italic; font-weight:700;
           font-size:22rem; line-height:1;
           color:rgba(192,23,75,0.03);
@@ -75,7 +73,7 @@ export default function FAQSection() {
         }
 
         .faq-title {
-          font-family:'Cormorant Garamond',serif;
+          font-family:Georgia,serif;
           font-size:clamp(2.2rem,3.5vw,3.2rem);
           font-weight:600; line-height:1.15;
           color:#1a0812; letter-spacing:-0.01em;

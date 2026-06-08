@@ -1,19 +1,16 @@
 import FAQSection from "@/components/faq";
 import ContactSection from "@/components/footer";
 import GrohairTopBar from "@/components/header";
-import VelacheryBeautyBanner from "@/components/hero-section";
-import GloskinApartSection from "@/components/logoslider";
 import MobileActionBar from "@/components/mobile-bar";
 import ScrollToTop from "@/components/scroll-top";
-import AppointmentForm from "@/components/offer-highlight";
-import SkinOfferSection from "@/components/offersection";
-import WhoWeAreSection from "@/components/results-section";
-import CTABanner from "@/components/review";
-import BeautyServicesSection from "@/components/skinpopup";
-import Stats from "@/components/stats";
 import ImageGridCarousel from "@/components/video";
-import ClinicVideosResponsiveGrid from "@/components/videosection";
+import ClinicInfoBanner from "@/components/clinic-info-banner";
+import PigmentationTreatments from "@/components/pigmentation-treatments";
+import AntiAgeingTreatments from "@/components/antiageing-treatments";
+import FacialPeelingTreatment from "@/components/facial-peeling-treatment";
 import Script from "next/script";
+import SkinTreatments from "@/components/treatments";
+import SkinConditions from "@/components/skin-conditions";
 
 export default function HomePage() {
   return (
@@ -32,16 +29,14 @@ export default function HomePage() {
         }}
       />
       <GrohairTopBar />
-      <VelacheryBeautyBanner />
-      <Stats />
-      <SkinOfferSection />
-      <BeautyServicesSection />
+      <ClinicInfoBanner />
+      <PigmentationTreatments />
+      <AntiAgeingTreatments />
       <ImageGridCarousel />
-      {/* <ClinicVideosResponsiveGrid /> */}
-      <WhoWeAreSection />
-      <GloskinApartSection />
-      <CTABanner />
-      <FAQSection />
+      <SkinTreatments />
+      <FacialPeelingTreatment />
+      <SkinConditions />
+      {/* <FAQSection /> */}
       <ContactSection />
       <MobileActionBar />
       <ScrollToTop />

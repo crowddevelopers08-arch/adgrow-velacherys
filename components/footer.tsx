@@ -158,8 +158,8 @@ function AppointmentForm() {
   return (
     <form onSubmit={handleSubmit} id="appointment-form" className="rf-form">
 
-      <h2 className="rf-title">Book Your <em>Appointment</em></h2>
-      <p className="rf-sub">Innovative solutions for lasting skin confidence.</p>
+      <h2 className="rf-title">Book Your Free Skin<em>Today Consultation </em></h2>
+      <p className="rf-sub">Limited appointment slots available. Reserve yours now.</p>
 
       {message && (
         <div className={`rf-msg ${message.type}`}>{message.text}</div>
@@ -339,9 +339,7 @@ export default function ContactSection() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Outfit:wght@300;400;500;600;700&display=swap');
-
-        .ct { font-family:'Outfit',sans-serif; background:#faf8f9; overflow:hidden; }
+        .ct { font-family:var(--font-outfit); background:#faf8f9; overflow:hidden; }
 
         /* ── TOP pink brand bar ── */
         .ct-top {
@@ -359,13 +357,13 @@ export default function ContactSection() {
         }
         .ct-logo { position:relative; z-index:2; display:inline-block; margin-bottom:20px; }
         .ct-logo-adv { font-size:0.75rem; font-weight:600; letter-spacing:0.3em; text-transform:uppercase; color:rgba(255,255,255,0.6); margin-bottom:2px; }
-        .ct-logo-name { font-family:'Playfair Display',serif; font-size:3.8rem; font-weight:700; line-height:1; letter-spacing:-0.03em; color:#fff; }
+        .ct-logo-name { font-family:var(--font-outfit); font-size:3.8rem; font-weight:700; line-height:1; letter-spacing:-0.03em; color:#fff; }
         .ct-logo-name span { color:rgba(255,180,180,0.9); }
         .ct-logo-tm { font-size:0.65rem; vertical-align:super; color:rgba(255,255,255,0.45); }
         .ct-logo-tag { font-size:0.75rem; font-weight:500; letter-spacing:0.28em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-top:6px; }
         .ct-tagline {
           position:relative; z-index:2;
-          font-family:'Playfair Display',serif; font-style:italic; font-weight:400;
+          font-family:var(--font-outfit); font-style:italic; font-weight:400;
           font-size:clamp(1.05rem,1.8vw,1.3rem);
           color:rgba(255,255,255,0.8); max-width:740px; margin:0 auto; line-height:1.8;
         }
@@ -386,7 +384,6 @@ export default function ContactSection() {
           opacity:0.5;
         }
         .ct-info-head {
-          font-family:'Playfair Display',serif;
           font-size:clamp(2rem,2.8vw,2.8rem); font-weight:700;
           color:#1a0812; line-height:1.2; margin-bottom:8px; letter-spacing:-0.01em;
         }
@@ -411,7 +408,6 @@ export default function ContactSection() {
         .rf-form { display:flex; flex-direction:column; gap:14px; width:100%; }
 
         .rf-title {
-          font-family:'Playfair Display',serif;
           font-size:clamp(2rem,2.8vw,2.8rem); font-weight:700;
           color:#1a0812; line-height:1.2; letter-spacing:-0.01em; margin-bottom:4px;
         }
@@ -434,7 +430,7 @@ export default function ContactSection() {
           width:100%; background:#fff;
           border:1.5px solid #eedce4; border-radius:8px;
           padding:13px 18px;
-          font-family:'Outfit',sans-serif;
+          font-family:var(--font-outfit);
           font-size:0.95rem; font-weight:500; color:#1a0812;
           outline:none; appearance:none;
           transition:border-color 0.25s, box-shadow 0.25s;
@@ -447,7 +443,7 @@ export default function ContactSection() {
           width:100%; margin-top:6px;
           background:linear-gradient(135deg, #ec4899 0%, #be185d 100%);
           color:#fff; border:none;
-          font-family:'Outfit',sans-serif;
+          font-family:var(--font-outfit);
           font-size:1rem; font-weight:700; letter-spacing:0.05em;
           padding:15px 24px; border-radius:8px; cursor:pointer;
           box-shadow:0 6px 24px rgba(192,23,75,0.28);
@@ -477,7 +473,6 @@ export default function ContactSection() {
           text-align:center;
         }
         .rf-modal-title {
-          font-family:'Playfair Display',serif;
           font-size:1.55rem; font-weight:700;
           color:#1a0812; line-height:1.3;
           margin-bottom:12px;
@@ -542,29 +537,16 @@ export default function ContactSection() {
       `}</style>
 
       <section id="contact" className="ct">
-        <div className="ct-top">
-          <div className="ct-logo">
-            <div className="ct-logo-adv">Advanced</div>
-            <div className="ct-logo-name"><span>gl</span>oskin<span className="ct-logo-tm">™</span></div>
-            <div className="ct-logo-tag">Skin Glow Forever</div>
-          </div>
-          <p className="ct-tagline">
-            Our experienced professionals and experts recommend you the best
-            treatment that matches your needs and assist you achieve the desired
-            results that you have always longed for.
-          </p>
-        </div>
 
         {/* ══ BODY ══ */}
         <div className="ct-body" ref={ref}>
 
           {/* LEFT — info */}
           <div className={`ct-info fi ${v ? "on" : ""} dl1`}>
-            <h2 className="ct-info-head">Find Us &<br /><em>Reach Out</em></h2>
+            <h2 className="ct-info-head">Find Us Serving Velachery &<br /><em>Nearby Areas</em></h2>
             <div className="ct-line" />
             <p className="ct-desc">
-              Visit our clinic or get in touch — we are always ready
-              to guide you towards your best skin.
+              Advanced Gloskin is conveniently located in Velachery, Chennai — easily accessible from Medavakkam, Pallikaranai, Guindy, Adyar, Kotturpuram, Perungudi, Thoraipakkam, and Sholinganallur. We also serve patients searching for a skin clinic near Velachery, skin doctor near me, dermatologist in Velachery Chennai, best skin clinic in Velachery, and best dermatologist near me.
             </p>
             <div className="ct-contact-blocks">
               <div className="ct-block">
@@ -589,7 +571,7 @@ export default function ContactSection() {
 
         </div>
 
-        <footer className="relative bg-[#e8185a] text-white text-sm py-4 max-sm:mb-10">
+        <footer style={{background:"linear-gradient(135deg, #ec4899 0%, #be185d 100%)"}} className="relative text-white text-sm py-4 max-sm:mb-10">
           <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-center sm:text-left">
               © {new Date().getFullYear()} Advanced Gloskin Velachery. All rights reserved | Powered By Crowd
