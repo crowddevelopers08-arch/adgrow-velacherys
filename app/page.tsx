@@ -11,6 +11,7 @@ import FacialPeelingTreatment from "@/components/facial-peeling-treatment";
 import Script from "next/script";
 import SkinTreatments from "@/components/treatments";
 import SkinConditions from "@/components/skin-conditions";
+import WhyChooseUs from "@/components/why-choose-us";
 
 export default function HomePage() {
   return (
@@ -31,6 +32,7 @@ export default function HomePage() {
       <GrohairTopBar />
       <ClinicInfoBanner />
       <PigmentationTreatments />
+      <WhyChooseUs />
       <AntiAgeingTreatments />
       <ImageGridCarousel />
       <SkinTreatments />
