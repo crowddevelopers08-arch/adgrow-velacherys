@@ -14,12 +14,22 @@ export default function ClinicInfoBanner() {
   return (
     <section className="relative w-full min-h-[560px] overflow-hidden mt-17 sm:min-h-[620px] md:min-h-[650px]">
 
-      {/* Background Image */}
+      {/* Background Image — mobile */}
+      <Image
+        src="/mobile-banner.png"
+        alt="Advanced Gloskin Skin Clinic Velachery"
+        fill
+        className="object-cover object-center sm:hidden"
+        sizes="100vw"
+        priority
+      />
+
+      {/* Background Image — desktop */}
       <Image
         src="/banners-img.png"
         alt="Advanced Gloskin Skin Clinic Velachery"
         fill
-        className="object-cover object-center"
+        className="object-cover object-center hidden sm:block"
         sizes="100vw"
         priority
       />
